@@ -8,9 +8,9 @@ body {
 
 .header {
     display: block;
-    padding: 50px;
+    padding: 30px;
     margin: 5px;
-    border-bottom: 2px solid #2d2929;
+    border-bottom: 5px solid #2d2929;
 }
 
 .toggle {
@@ -68,13 +68,14 @@ body {
 }
 
 .title {
-    background:linear-gradient(135deg, #f2a008, #f01414);
+    background: linear-gradient(135deg, #f2a008, #f01414);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 75%;
     height: 75%;
     border-radius: 50%;
+    box-shadow: 5px 5px 5px #3e4b56;
 }
 
 .title h1 {
@@ -83,28 +84,31 @@ body {
 }
 
 .blog-card {
-    margin: 0;
-    padding: 5;
-    height: 200px;
-    width: 400px;
+    background: linear-gradient(135deg, #f2a008, #f01414);
+    border-radius: 5px;
+    padding: 10px;
+    height: 85%;
+    width: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    box-shadow: 5px 5px 5px #3e4b56;
 }
 
 .card-header {
-    font-size: 35px;
+    color: #fff;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .post-box {
-    height: 65%;
-    width: 75%;
+    height: 75%;
+    width: 85%;
     padding: 5px;
-    margin-top: 5px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;

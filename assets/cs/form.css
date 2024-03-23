@@ -84,7 +84,13 @@ body {
     padding: 5;
     height: 200px;
     width: 400px;
-    display: flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
+}
+
+.blog-card h2 {
+    font-size: 35px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

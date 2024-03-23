@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #cbd3db;
+    background-color: #eff2f6;
 }
 
 .header {
@@ -84,6 +84,8 @@ body {
     padding: 5;
     height: 200px;
     width: 400px;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
 }
 

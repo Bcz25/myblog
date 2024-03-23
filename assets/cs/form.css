@@ -123,3 +123,12 @@ body {
     height: 100px;
     width: 300px;
 }
+
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #6a737c;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #3e4b56;
+}

@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: #eff2f6;
+    color: #6a737c;
 }
 
 .header {
@@ -44,8 +45,7 @@ body {
     height: 100vh;
     width: 49%;
     float: left;
-    border-right: 2px solid #2d2929;
-    border-top: 2px solid #2d2929;
+    border-top: 5px solid #2d2929;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -53,14 +53,13 @@ body {
 }
 
 .container-r {
-    padding: 5px;
+    padding: 40px;
     margin-top: 5px;
     margin-right: 5px;
     height: 100vh;
     width: 49%;
     float: right;
-    border-left: 2px solid #2d2929;
-    border-top: 2px solid #2d2929;
+    border-top: 5px solid #2d2929;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -80,7 +79,6 @@ body {
 
 .title h1 {
     font-size: 50px;
-    color: #fff;
 }
 
 .blog-card {
@@ -98,7 +96,6 @@ body {
 }
 
 .card-header {
-    color: #fff;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -113,4 +110,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }

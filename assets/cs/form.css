@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #cbd3db;
+}
+
+.header {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #2d2929;
+}
+
+.toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position:relative;
+}
+
+.toggle::before { 
+    content: "\1F506";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.toggle::after {
+    content:"\1F319";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}

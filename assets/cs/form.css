@@ -89,7 +89,7 @@ body {
     box-sizing: border-box;
 }
 
-.blog-card h2 {
+.card-header {
     font-size: 35px;
     display: flex;
     display: flex;

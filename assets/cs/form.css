@@ -8,7 +8,8 @@ body {
 
 .header {
     display: block;
-    padding: 20px;
+    padding: 50px;
+    margin: 5px;
     border-bottom: 2px solid #2d2929;
 }
 
@@ -37,17 +38,29 @@ body {
 }
 
 .container-l {
-    height: auto;
+    height: 100vh;
     width: 50%;
     float: left;
     border-right: 2px solid #2d2929;
-    border-bottom: 5px solid #2d2929;
+    border-top: 2px solid #2d2929;
 }
 
 .container-r {
-    height: auto;
-    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    height: 100vh;
+    width: ;
     float: right;
     border-left: 2px solid #2d2929;
-    border-bottom: 5px solid #2d2929;
+    border-top: 2px solid #2d2929;
+}
+
+.title {
+    background:linear-gradient(135deg, orange, red);
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }

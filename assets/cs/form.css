@@ -53,7 +53,7 @@ body {
 }
 
 .container-r {
-    padding: 40px;
+    padding: 10px;
     margin-top: 5px;
     margin-right: 5px;
     height: 100vh;
@@ -96,6 +96,7 @@ body {
 }
 
 .card-header {
+    height: 300px;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -108,7 +109,16 @@ body {
     padding: 5px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 10px;
+    align-items: flex-start;
+    font-size: 15px;
+}
+
+#username, #title, #content {
+    margin: 0 0 25px 25px;
+}
+
+#content {
+height: 100px;
 }

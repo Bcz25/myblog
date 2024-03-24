@@ -2,9 +2,9 @@ const modeToggle = document.getElementsByClassName('toggle')[0];
 const landing = document.getElementsByClassName('landing') [0];
 const card = document.getElementsByClassName('blog-card')[0];
 const submit = document.getElementById('submit')
-const username = document.getElementById('usersame').value;
-const title = document.getElementById('title').value;
-const content = document.getElementById('content').value;
+const username = document.getElementById('usersame');
+const title = document.getElementById('title');
+const content = document.getElementById('content');
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');

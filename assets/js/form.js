@@ -1,7 +1,7 @@
 const modeToggle = document.getElementsByClassName('toggle')[0];
 const landing = document.getElementsByClassName('landing') [0];
 const card = document.getElementsByClassName('blog-card')[0];
-const submit = document.getElementsByClassName('submit')
+const submit = document.getElementById('submit')
 
 
 modeToggle.addEventListener('click', function() {
@@ -14,3 +14,4 @@ modeToggle.addEventListener('click', function() {
         card.classList.toggle('dark-mode');
     }
 });
+

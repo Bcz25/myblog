@@ -152,7 +152,7 @@ input {
     width: 300px;
 }
 
-.submit {
+#submit {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -166,6 +166,39 @@ input {
     width: 100px;
 }
 
-.submit:active{
+#submit:active{
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .container-l,
+    .container-r {
+        width: 100%; 
+        float: none; 
+        border-top: none; 
+        margin: 0;
+    }
+
+    .container-r {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        padding: 20px; 
+    }
+
+    .toggle {
+        top: 20px;
+        right: 20px;
+    }
+
+    .landing h1 {
+        font-size: 40px;
+    }
+
+    .post-box {
+        font-size: 13px;
+    }
 }

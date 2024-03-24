@@ -1,8 +1,6 @@
 :root {
     --bg-color-light: #eff2f6;
     --bg-color-dark: #2d3033;
-    --content-sun-light: "☀️";
-    --content-moon-dark: "🌘";
     --bg-color-red: linear-gradient(135deg, #f2a008, #f01414);
     --bg-color-blue: linear-gradient(135deg, #1441c4, #0f1325);
     --box-shadow-light: 5px 5px 5px #3e4b56;
@@ -36,9 +34,6 @@ input {
 }
 
 .toggle {
-    height: 10px;
-    width: 10px;
-    display: inline-block;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -48,15 +43,24 @@ input {
     cursor: pointer;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     background: #6a737c;
-    content: var(--content-sun-light);
 }
 
-.toggle.dark-mode {
-    content: var(--content-moon-dark);
+.toggle::before {
+    content: "☀️";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
 }
 
 .toggle:active {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toggle::after{
+    content: "🌘";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
 }
 
 .container-l {

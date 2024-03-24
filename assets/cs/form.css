@@ -185,10 +185,6 @@ input {
 }
 
 @media only screen and (max-width: 576px) {
-    .header {
-        padding: 20px; 
-    }
-
     .toggle {
         top: 20px;
         right: 20px;
@@ -200,5 +196,9 @@ input {
 
     .post-box {
         font-size: 13px;
+    }
+
+    #content {
+        width: 100px;
     }
 }

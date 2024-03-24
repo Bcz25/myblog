@@ -46,7 +46,7 @@ input {
 }
 
 .toggle::before {
-    content: "☀️";
+    content: "💡";
     height: 10px;
     width: 10px;
     display: inline-block;
@@ -56,12 +56,6 @@ input {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.toggle::after{
-    content: "🌘";
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-}
 
 .container-l {
     padding: 5px;

@@ -17,6 +17,9 @@ modeToggle.addEventListener('click', function() {
     }
 });
 
+submit.addEventListener('click', function() {
+    window.location.href="./myblog/blog.html"
+})
 
 username.addEventListener('input', function (){
     localStorage.setItem('username', this.value);

@@ -18,7 +18,7 @@ modeToggle.addEventListener('click', function() {
 });
 
 submit.addEventListener('click', function() {
-    window.location.href="blog.html"
+    window.location.href="https://bcz25.github.io/myblog/blog"
 })
 
 username.addEventListener('input', function (){

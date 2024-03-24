@@ -6,6 +6,6 @@ const submit = document.getElementsByClassName('submit')
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
-    landing.classList.modeToggle('dark-mode');
-    card.classList.modeToggle('dark-mode');
+    landing.classList.toggle('dark-mode');
+    card.classList.toggle('dark-mode');
 });

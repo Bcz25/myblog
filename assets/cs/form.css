@@ -84,7 +84,7 @@ input {
     align-items: center;
 }
 
-.title {
+.landing {
     background: var(--bg-color-red);
     display: flex;
     justify-content: center;
@@ -95,12 +95,12 @@ input {
     box-shadow: var(--box-shadow-light);
 }
 
-.title.dark-mode{
+.landing.dark-mode{
     background: var(--bg-color-blue);
     box-shadow: var(--box-shadow-dark);
 }
 
-.title h1 {
+.landing h1 {
     font-size: 50px;
 }
 

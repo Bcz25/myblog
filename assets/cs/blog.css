@@ -24,7 +24,7 @@ body {
     margin: 5px;
     border-bottom: 5px solid #6a737c;
 }
-.header h1 {
+#blog-header {
     font-size: 25px;
     position: absolute;
     top: 10px;
@@ -32,17 +32,19 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     background: var(--bg-color-red);
 }
 
-.header.dark-mode h1 {
+#blog-header.dark-mode {
     background: var( --bg-color-blue);
 }
 
-.back {
+#back {
+    color:#e6dbdb;
     position: absolute;
     top: 10px;
-    right: 50px;
+    right: 75px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -50,6 +52,11 @@ body {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     background: #6a737c;
 }
+
+#back:active {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 .toggle {
     position: absolute;
@@ -63,12 +70,6 @@ body {
     background: #6a737c;
 }
 
-.toggle::before {
-    content: "💡";
-    height: 10px;
-    width: 10px;
-}
-
-.toggle:active .back:active {
+.toggle:active {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }

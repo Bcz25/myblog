@@ -45,12 +45,6 @@ input {
     background: #6a737c;
 }
 
-/*.toggle::before {
-    content: "💡";
-    height: 10px;
-    width: 10px;
-}
-*/
 .toggle:active {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }

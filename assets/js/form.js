@@ -1,8 +1,8 @@
-const toggle = document.getElementById('toggle');
-const submit = document.getElementById('submit')
+const toggle = document.getElementsByClassName('toggle');
+const submit = document.getElementsByClassName('submit')
 
 
 toggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode')
-    document
+    
 });

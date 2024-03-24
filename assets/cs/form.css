@@ -18,6 +18,12 @@ body {
     color: #6a737c;
 }
 
+input {
+    border-radius: 5px;
+    border: none;
+    background: #e1e9ee;
+}
+
 .dark-mode {
     background-color: var(--bg-color-dark);
 }
@@ -26,7 +32,7 @@ body {
     display: block;
     padding: 30px;
     margin: 5px;
-    border-bottom: 5px solid #6a737c;
+    border-bottom: 5px solid #e1e9ee;
 }
 
 .toggle {
@@ -49,7 +55,7 @@ body {
     content: var(--content-moon-dark);
 }
 
-#toggle:active {
+.toggle:active {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -149,7 +155,7 @@ body {
     width: 300px;
 }
 
-#submit {
+.submit {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -162,6 +168,6 @@ body {
     width: 100px;
 }
 
-#submit:active{
+.submit:active{
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }

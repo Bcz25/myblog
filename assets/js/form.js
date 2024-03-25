@@ -2,7 +2,7 @@ const modeToggle = document.getElementsByClassName('toggle')[0];
 const landing = document.getElementsByClassName('landing') [0];
 const card = document.getElementsByClassName('blog-card')[0];
 const submit = document.getElementById('submit');
-const darkModeEnabled = body.classList.contains('dark-mode');
+const darkModeEnabled = document.body.classList.contains('dark-mode');
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
@@ -24,7 +24,7 @@ localStorage.setItem('darkMode', darkModeEnabled);
 
 document.addEventListener('DOMContentLoaded', function() {
     localStorage.getItem('darkMode');
-    if (darkMode === true) {
+    if (darkModeEnabled === true) {
         document.body.classList.add('dark-mode');
     }
 })

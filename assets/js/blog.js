@@ -4,6 +4,7 @@ const back = document.getElementById('back');
 const postContainer= document.getElementById('post-container');
 const post = JSON.parse(localStorage.getItem('post')) || [];
 const portfolio = document.getElementById('portfolio');
+const darkModeEnabled = document.body.classList.contains('dark-mode');
 
 
 function createPostCard(post) {
@@ -33,6 +34,14 @@ function displayPosts() {
 
 displayPosts();
 
+localStorage.setItem('darkMode', darkModeEnabled);
+
+document.addEventListener('DOMContentLoaded', function() {
+    localStorage.getItem('darkMode');
+    if (darkModeEnabled === true) {
+        document.body.classList.add('dark-mode');
+    }
+})
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');

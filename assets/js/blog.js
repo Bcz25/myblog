@@ -55,5 +55,5 @@ back.addEventListener('click', function() {
 })
 
 portfolio.addEventListener('click', function () {
-    window.location.href="https://bcz25.github.io/Myportfolio/"
+    window.location.href="https://bcz25.github.io/Portfolio/"
 })

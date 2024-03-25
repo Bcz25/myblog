@@ -76,10 +76,9 @@ body {
 
 .post-container {
     padding: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 5px;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     border-top: 5px solid #6a737c;
     border-bottom: 5px solid #6a737c;
     box-sizing: border-box;

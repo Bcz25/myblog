@@ -118,7 +118,7 @@ input {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    box-shadow: 5px 5px 5px #3e4b56;
+    box-shadow: var(--box-shadow-light);
 }
 
 .blog-card.dark-mode{
@@ -146,15 +146,20 @@ input {
     font-size: 15px;
 }
 
+input {
+    vertical-align: top;
+    box-shadow: inset;
+}
+
 #username, #title, #content {
     margin: 0 0 25px 25px;
 }
 
-#content {
+/*#content {
     height: 100px;
     width: 300px;
 }
-
+*/
 #submit {
     display: flex;
     flex-direction: row;

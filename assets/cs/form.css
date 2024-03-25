@@ -193,10 +193,6 @@ input {
     .container-r {
         margin-top: 5px;
     }
-
-    #content {
-        width: auto;
-    }
 }
 
 
@@ -212,9 +208,5 @@ input {
 
     .post-box {
         font-size: 13px;
-    }
-
-    #content {
-        width: auto;
     }
 }

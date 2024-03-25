@@ -104,6 +104,31 @@ body {
     border-bottom: 5px solid #6a737c;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.post-card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 2px solid #6a737c;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.post-card h2 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.5px;
+    margin-bottom: 10px;
+}
+
+.post-card footer {
+    font-style: italic;
 }

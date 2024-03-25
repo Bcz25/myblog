@@ -55,8 +55,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
     if (darkModeEnabled) {
         document.body.classList.add('dark-mode');
+        blogHeader.classList.add('dark-mode');
+        modeToggle.classList.add('dark-mode');
+        back.classList.add('dark-mode');
+        portfolio.classList.add('dark-mode');
     }
-});
+})
 
 back.addEventListener('click', function() {
     window.location.href="https://bcz25.github.io/myblog"

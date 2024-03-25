@@ -193,7 +193,12 @@ input {
     .container-r {
         margin-top: 5px;
     }
+
+    #content {
+        width: auto;
+    }
 }
+
 
 @media only screen and (max-width: 576px) {
     .toggle {
@@ -210,6 +215,6 @@ input {
     }
 
     #content {
-        width: 200px;
+        width: auto;
     }
 }

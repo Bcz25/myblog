@@ -110,15 +110,15 @@ body {
 .post-card {
     display: inline-flex;
     flex-wrap: wrap;
+    flex-direction: column;
     border: 2px solid #6a737c;
     border-radius: 5px;
-    padding: 20px;
+    padding: 25px;
     margin: 20px;
 }
 
 .post-card h2 {
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 

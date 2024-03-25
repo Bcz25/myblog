@@ -2,9 +2,6 @@ const modeToggle = document.getElementsByClassName('toggle')[0];
 const landing = document.getElementsByClassName('landing') [0];
 const card = document.getElementsByClassName('blog-card')[0];
 const submit = document.getElementById('submit')
-const username = document.getElementById('usersame');
-const title = document.getElementById('title');
-const content = document.getElementById('content');
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
@@ -23,23 +20,34 @@ modeToggle.addEventListener('click', function() {
 });
 
 submit.addEventListener('click', function() {
-    window.location.href="https://bcz25.github.io/myblog/blog"
-})
+    const username = document.getElementById('usersame').value;
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+    if (!username) {
+        alert('Username cannot be blank')
+        return;
+    }
+    if (!title) {
+        alert('Title cannot be blank')
+        return;
+    }
+    if (!content) {
+        alert('Post cannot be blank')
+        return;
+    }
 
-username.addEventListener('input', function (){
-    localStorage.setItem('username', this.value);
-})
+    const blogPost = {
+        Username: username,
+        Title: title,
+        Post: content
+    };
 
-title.addEventListener('input', function (){
-    localStorage.setItem('title', this.value);
-})
+    savePostToLocalStorage(blogPost);
+    window.location.href="https://bcz25.github.io/myblog/blog";
+});
 
-content.addEventListener('input', function (){
-    localStorage.setItem('content', this.value);
-})
-
-submit.addEventListener('click', function (){
-    localStorage.getItem('username')
-    localStorage.getItem('title');
-    localStorage.getItem('content');
-})
+function savePostToLocalStorage(blogPost) {
+    let post = JSON.parse(localStorage.getItem('post'));
+    post.push(blogPost);
+    localStorage.setItem('post', JSON.stringify(post));
+}

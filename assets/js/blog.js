@@ -37,7 +37,7 @@ displayPosts();
 localStorage.setItem('darkMode', darkModeEnabled);
 
 document.addEventListener('DOMContentLoaded', function() {
-    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+    const darkModeEnabled = localStorage.getItem('darkMode');
     if (darkModeEnabled === 'true') {
         document.body.classList.add('dark-mode');
     }

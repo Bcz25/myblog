@@ -7,6 +7,8 @@
     --box-shadow-dark: 5px 5px 5px rgb(95, 99, 101, 0.5);
     --shadow-active-light: 5px 5px 5px rgba(0, 0, 0, 0.2);
     --shadow-active-dark: 5px 5px 5px rgb(95, 99, 101, 0.2);
+    --font-color-light: #2c2f32; 
+    --font-color-dark: #aab4be;
 }
 
 body {
@@ -15,11 +17,12 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: var(--bg-color-light);
-    color: #6a737c;
+    color: var(--font-color-light);
 }
 
 .dark-mode {
     background-color: var(--bg-color-dark);
+    color: var(--font-color-dark);
 }
 
 .header {
@@ -113,22 +116,23 @@ body {
     flex-direction: column;
     border: 2px solid #6a737c;
     border-radius: 5px;
-    padding: 25px;
+    padding: 15px;
     margin: 20px;
 }
 
 .post-card h2 {
+    padding-left: 10px;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .post-card p {
-    font-size: 10px;
-    font-weight: normal;
-    line-height: 1.5px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 0;
 }
 
 .post-card footer {
     font-style: italic;
+    margin-top: 10px;
 }

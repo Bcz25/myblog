@@ -3,10 +3,10 @@
     --bg-color-dark: #2d3033;
     --bg-color-red: linear-gradient(135deg, #eeb64e, #d65a07);
     --bg-color-blue: linear-gradient(135deg, #1441c4, #0f1325);
-    --box-shadow-light: 0px 5px 5px rgba(0, 0, 0, 0.5);
-    --box-shadow-dark: 0px 5px 5px rgb(95, 99, 101);
-    --shadow-active-light: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    --shadow-active-dark: 0px 5px 5px rgb(95, 99, 101, 0.3);
+    --box-shadow-light: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    --box-shadow-dark: 5px 5px 5px rgb(95, 99, 101);
+    --shadow-active-light: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    --shadow-active-dark: 5px 5px 5px rgb(95, 99, 101, 0.3);
 }
 
 body {

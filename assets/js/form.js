@@ -17,6 +17,9 @@ modeToggle.addEventListener('click', function() {
     if (card) {
         card.classList.toggle('dark-mode');
     }
+    if (submit) {
+        submit.classList.toggle('dark-mode')
+    }
 });
 
 submit.addEventListener('click', function() {

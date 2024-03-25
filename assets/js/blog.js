@@ -4,7 +4,6 @@ const back = document.getElementById('back');
 const postContainer= document.getElementById('post-container');
 const post = JSON.parse(localStorage.getItem('post')) || [];
 const portfolio = document.getElementById('portfolio');
-const darkModeEnabled = document.body.classList.contains('dark-mode');
 
 
 function createPostCard(post) {
@@ -34,15 +33,6 @@ function displayPosts() {
 
 displayPosts();
 
-localStorage.setItem('darkMode', darkModeEnabled);
-
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
-    if (darkModeEnabled === true) {
-        document.body.classList.add('dark-mode');
-    }
-});
-
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     if (blogHeader) {
@@ -56,6 +46,15 @@ modeToggle.addEventListener('click', function() {
     }
     if (portfolio) {
         portfolio.classList.toggle('dark-mode')
+    }
+    const darkModeEnabled = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', darkModeEnabled);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+    if (darkModeEnabled) {
+        document.body.classList.add('dark-mode');
     }
 });
 

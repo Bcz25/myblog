@@ -18,13 +18,13 @@ modeToggle.addEventListener('click', function() {
     if (submit) {
         submit.classList.toggle('dark-mode');
     }
+    const darkModeEnabled = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', darkModeEnabled);
 });
-
-localStorage.setItem('darkMode', darkModeEnabled);
 
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
-    if (darkModeEnabled === true) {
+    if (darkModeEnabled) {
         document.body.classList.add('dark-mode');
     }
 })

@@ -2,6 +2,7 @@ const modeToggle = document.getElementsByClassName('toggle')[0];
 const landing = document.getElementsByClassName('landing') [0];
 const card = document.getElementsByClassName('blog-card')[0];
 const submit = document.getElementById('submit');
+const darkModeEnabled = body.classList.contains('dark-mode');
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
@@ -15,9 +16,18 @@ modeToggle.addEventListener('click', function() {
         card.classList.toggle('dark-mode');
     }
     if (submit) {
-        submit.classList.toggle('dark-mode')
+        submit.classList.toggle('dark-mode');
     }
 });
+
+localStorage.setItem('darkMode', darkModeEnabled);
+
+document.addEventListener('DOMContentLoaded', function() {
+    localStorage.getItem('darkMode');
+    if (darkMode === true) {
+        document.body.classList.add('dark-mode');
+    }
+})
 
 submit.addEventListener('click', function() {
     const username = document.getElementById('username').value;

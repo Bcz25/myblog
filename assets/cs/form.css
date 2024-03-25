@@ -209,4 +209,7 @@ input {
     .post-box {
         font-size: 13px;
     }
+    #content {
+        width: 150px;
+    }
 }

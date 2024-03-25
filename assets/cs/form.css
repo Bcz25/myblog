@@ -3,8 +3,10 @@
     --bg-color-dark: #2d3033;
     --bg-color-red: linear-gradient(135deg, #eeb64e, #d65a07);
     --bg-color-blue: linear-gradient(135deg, #1441c4, #0f1325);
-    --box-shadow-light: 5px 5px 5px #3e4b56;
-    --box-shadow-dark: 5px 5px 5px #5f6365;
+    --box-shadow-light: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    --box-shadow-dark: 0px 5px 5px rgb(95, 99, 101);
+    --shadow-active-light: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    --shadow-active-dark: 0px 5px 5px rgb(95, 99, 101, 0.3);
 }
 
 body {
@@ -41,14 +43,21 @@ input {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--box-shadow-light);
     background: #6a737c;
 }
 
 .toggle:active {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-active-light);
 }
 
+.toggle.dark-mode {
+    box-shadow: var(--box-shadow-dark);
+}
+
+.toggle.dark-mode:active {
+    box-shadow: var(--shadow-active-dark);
+}
 
 .container-l {
     padding: 5px;

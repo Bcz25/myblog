@@ -8,7 +8,9 @@ const content = document.getElementById('content');
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
-   
+    if (modeToggle) {
+        modeToggle.classList.toggle('dark-mode');
+    }
     if (landing) {
         landing.classList.toggle('dark-mode');
     }

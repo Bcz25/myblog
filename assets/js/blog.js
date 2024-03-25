@@ -7,6 +7,12 @@ modeToggle.addEventListener('click', function() {
     if (blogHeader) {
         blogHeader.classList.toggle('dark-mode');
     }
+    if (modeToggle) {
+        modeToggle.classList.toggle('dark-mode');
+    }
+    if (back) {
+        back.classList.toggle('dark-mode');
+    }
 });
 
 back.addEventListener('click', function() {

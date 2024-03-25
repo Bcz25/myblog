@@ -37,11 +37,11 @@ displayPosts();
 localStorage.setItem('darkMode', darkModeEnabled);
 
 document.addEventListener('DOMContentLoaded', function() {
-    localStorage.getItem('darkMode');
+    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
     if (darkModeEnabled === 'true') {
         document.body.classList.add('dark-mode');
     }
-})
+});
 
 modeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
@@ -61,8 +61,8 @@ modeToggle.addEventListener('click', function() {
 
 back.addEventListener('click', function() {
     window.location.href="https://bcz25.github.io/myblog"
-})
+});
 
 portfolio.addEventListener('click', function () {
     window.location.href="https://bcz25.github.io/Portfolio/"
-})
+});

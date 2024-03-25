@@ -23,8 +23,8 @@ modeToggle.addEventListener('click', function() {
 localStorage.setItem('darkMode', darkModeEnabled);
 
 document.addEventListener('DOMContentLoaded', function() {
-    localStorage.getItem('darkMode');
-    if (darkModeEnabled === 'true') {
+    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+    if (darkModeEnabled) {
         document.body.classList.add('dark-mode');
     }
 })

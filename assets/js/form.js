@@ -20,9 +20,9 @@ modeToggle.addEventListener('click', function() {
 });
 
 submit.addEventListener('click', function() {
-    let username = document.getElementById('usersame').value;
-    let title = document.getElementById('title').value;
-    let content = document.getElementById('content').value;
+    const username = document.getElementById('username').value;
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
     if (!username) {
         alert('Username cannot be blank')
         return;

@@ -3,6 +3,7 @@ const blogHeader = document.getElementById('blog-header');
 const back = document.getElementById('back');
 const postContainer= document.getElementById('post-container');
 const post = JSON.parse(localStorage.getItem('post')) || [];
+const portfolio = document.getElementById('portfolio');
 
 
 function createPostCard(post) {
@@ -44,9 +45,15 @@ modeToggle.addEventListener('click', function() {
     if (back) {
         back.classList.toggle('dark-mode');
     }
+    if (portfolio) {
+        portfolio.classList.toggle('dark-mode')
+    }
 });
 
 back.addEventListener('click', function() {
     window.location.href="https://bcz25.github.io/myblog"
 })
 
+portfolio.addEventListener('click', function () {
+    window.location.href="https://bcz25.github.io/Myportfolio/"
+})

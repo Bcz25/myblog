@@ -101,7 +101,7 @@ body {
 #post-container {
     padding: 5px;
     margin: 5px;
-    height: 100vh;
+    height: 100%;
     width: auto;
     border-top: 5px solid #6a737c;
     border-bottom: 5px solid #6a737c;
@@ -124,6 +124,7 @@ body {
     padding-left: 10px;
     font-size: 25px;
     margin-top: 0;
+    font-weight: 500;
 }
 
 .post-card p {
@@ -135,4 +136,38 @@ body {
 .post-card footer {
     font-style: italic;
     margin-top: 10px;
+    padding: 5px;
+    border-top: 2px solid #6a737c;
+}
+
+.footer {
+    display: block;
+    padding: 35px;
+    margin: 5px;
+    border-top: 5px solid #6a737c;
+}
+
+#portfolio {
+    color:#e6dbdb;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-light);
+    background: #6a737c;
+}
+
+#portfolio:active {
+    box-shadow: var(--shadow-active-light);
+}
+
+#portfolio.dark-mode {
+    box-shadow: var(--box-shadow-dark);
+}
+
+#portfolio.dark-mode:active {
+    box-shadow: var(--shadow-active-dark);
 }

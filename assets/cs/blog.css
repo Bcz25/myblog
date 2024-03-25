@@ -4,9 +4,9 @@
     --bg-color-red: linear-gradient(135deg, #eeb64e, #d65a07);
     --bg-color-blue: linear-gradient(135deg, #1441c4, #0f1325);
     --box-shadow-light: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    --box-shadow-dark: 5px 5px 5px rgb(95, 99, 101);
+    --box-shadow-dark: 5px 5px 5px rgb(95, 99, 101, 0.5);
     --shadow-active-light: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    --shadow-active-dark: 5px 5px 5px rgb(95, 99, 101, 0.3);
+    --shadow-active-dark: 5px 5px 5px rgb(95, 99, 101, 0.2);
 }
 
 body {

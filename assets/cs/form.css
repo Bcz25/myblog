@@ -4,9 +4,9 @@
     --bg-color-red: linear-gradient(135deg, #eeb64e, #d65a07);
     --bg-color-blue: linear-gradient(135deg, #1441c4, #0f1325);
     --box-shadow-light: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    --box-shadow-dark: 5px 5px 5px rgb(95, 99, 101);
+    --box-shadow-dark: 5px 5px 5px rgb(95, 99, 101, 0.5);
     --shadow-active-light: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    --shadow-active-dark: 5px 5px 5px rgb(95, 99, 101, 0.3);
+    --shadow-active-dark: 5px 5px 5px rgb(95, 99, 101, 0.2);
 }
 
 body {
@@ -19,9 +19,10 @@ body {
 }
 
 input {
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
     background: #e1e9ee;
+    height: 25px;
 }
 
 .dark-mode {
@@ -146,20 +147,14 @@ input {
     font-size: 15px;
 }
 
-input {
-    vertical-align: top;
-    box-shadow: inset;
-}
-
 #username, #title, #content {
     margin: 0 0 25px 25px;
 }
 
-/*#content {
-    height: 100px;
-    width: 300px;
+#content {
+    width: 500px;
 }
-*/
+
 #submit {
     display: flex;
     flex-direction: row;

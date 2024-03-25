@@ -1,15 +1,36 @@
 const modeToggle = document.getElementsByClassName('toggle')[0];
 const blogHeader = document.getElementById('blog-header');
 const back = document.getElementById('back');
-const postList= document.getElementById('post-list');
+const postContainer= document.getElementById('post-container');
 const post = JSON.parse(localStorage.getItem('post')) || [];
 
 
-post.forEach(function(blogPost) {
-    const li = document.createElement('li');
-    li.textContent = blogPost;
-    postList.appendChild(li);
-});
+function createPostCard(post) {
+
+    const card = document.createElement('section');
+    card.classList.add('post-card');
+    const cardHeader = document.createElement('h2');
+    cardHeader.textContent = post.Title;
+    const cardContent = document.createElement('p');
+    cardContent.textContent = post.Post;
+    const cardFooter = document.createElement('footer');
+    cardFooter.textContent = 'Posted by: ' + post.Username;
+
+    card.appendChild(cardHeader);
+    card.appendChild(cardContent);
+    card.appendChild(cardFooter);
+
+    return card;
+} 
+
+function displayPosts() {
+    post.forEach(function(post) {
+        const postCard = createPostCard(post);
+        postContainer.appendChild(postCard);
+    })
+}
+
+displayPosts();
 
 
 modeToggle.addEventListener('click', function() {

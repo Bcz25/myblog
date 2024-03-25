@@ -95,7 +95,7 @@ body {
     box-shadow: var(--shadow-active-dark);
 }
 
-.post-container {
+#post-container {
     padding: 5px;
     margin: 5px;
     height: 100vh;

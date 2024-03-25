@@ -10,6 +10,6 @@ Toggling Dark Mode: Click on the button at the top right with the "💡" icon to
 
 Navigation: Use the navigation links at the top to return to the main blog page or visit my portfolio and check out soe of my other projects.
 
-![Screenshot form page](../Screenshot form page.png)
+![Screenshot form page](https://github.com/Bcz25/myblog/blob/main/Screenshot%20form%20page.png)
 
-![Screenshot post page](../Screenshot post page.png)
+![Screenshot post page](https://github.com/Bcz25/myblog/blob/main/Screenshot%20post%20page.png)

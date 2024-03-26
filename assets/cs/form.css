@@ -193,6 +193,10 @@ input {
     .container-r {
         margin-top: 5px;
     }
+    
+    #content {
+        width: 150px;
+    }
 }
 
 

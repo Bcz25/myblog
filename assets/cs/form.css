@@ -151,10 +151,6 @@ input {
     margin: 0 0 25px 25px;
 }
 
-#content {
-    width: 300px;
-}
-
 #submit {
     display: flex;
     flex-direction: row;
@@ -194,9 +190,6 @@ input {
         margin-top: 5px;
     }
     
-    #content {
-        width: 150px;
-    }
 }
 
 
@@ -212,8 +205,5 @@ input {
 
     .post-box {
         font-size: 13px;
-    }
-    #content {
-        width: 150px;
     }
 }
